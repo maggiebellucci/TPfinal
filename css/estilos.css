@@ -1,0 +1,118 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Roboto+Slab:wght@100..900&display=swap');
+   
+* h1{
+    color: rgb(24, 94, 132);
+    box-sizing: border-box;
+    margin: 10;
+    font-family: "Roboto Slab", serif;
+    text-align:center 
+ }
+
+h2{
+    font-family: "Roboto Slab", serif;
+    font-weight: 100;
+    text-align:center  
+  
+}
+
+p{
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    text-align:center
+}
+
+header {
+    width: 100%;
+    background-color: rgb(148, 166, 186);
+    color: white;
+    padding: 10px;
+    animation-name: animacion;
+    animation-duration: 5s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate-reverse;
+    color: white;
+    padding: 40px;
+    
+}
+
+@keyframes animacion {
+    from{background-color: rgb(148, 166, 186);}
+    
+    to {background-color: #91c9ce }
+   
+}
+
+
+header a {
+    text-decoration: wavy;
+    color: rgb(94, 145, 158);
+    text-transform: uppercase;
+    background-color: rgb(24, 94, 132);
+    color: rgb(255, 255, 255);
+    width: 120px;
+    height: 25px;
+    display: block;
+    margin: 10px auto;
+    /*margen superior e infierior en 10px y margen de izq y derecha en auto para centrarlo*/
+    margin-bottom: 20px;
+    line-height:23px;
+    padding: 3px;
+    border-radius: 30px;
+    transition: all 1s;
+    text-align:center;
+ 
+
+}
+
+header a:hover {
+background-color: black;
+color: white;
+border-color: white;
+}
+
+main {
+
+width: 95%;
+margin: 10px auto;
+
+display: flex;
+flex-wrap:wrap;
+/*hacer que si los contenedores no entran, es decir su suma supera el width del contenedor padre, entonces se van debajo generando una nueva fila*/
+justify-content: space-between;
+
+}
+
+footer {
+    width: 100%;
+    height: 100%;
+    background-image: url(../imagenes/imagenfondo.jpg);
+    background-size: cover;
+    color: rgb(255, 255, 255);
+    padding: 3px;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+div {
+width: 48%;
+margin:10px;
+
+}
+
+#video {
+
+width: 90%;
+margin:10px auto;
+}
+
+
+img, video { width: 90%;}
